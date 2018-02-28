@@ -36,10 +36,25 @@
           <a class="navbar-brand" href="/">Social Network</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="/accounts/">Home</a></li>
+            </ul>
+
+            {% if user.is_authenticated %}
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/accounts/register">Register</a></li>
+                    <li><a href="/accounts/logout">Logout</a></li>
+                    <li><a href="/accounts/profile">User Profile</a></li>
+                    <li><a href="/accounts/profile/edit">Edit Profile</a></li>
+                    <li><a href="/accounts/change-password">Change Password</a></li>
+                    <li><a href="/accounts/reset-password">Reset Password</a></li>
+                </ul>
+            {% else %}
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="/accounts/register">Register</a></li>
                 <li><a href="/accounts/login">Login</a></li>
             </ul>
+            {% endif %}
         </div><!--/.navbar-collapse -->
       </div>
     </nav>
