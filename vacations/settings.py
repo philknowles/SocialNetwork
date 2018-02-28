@@ -130,6 +130,13 @@ STATICFILES_DIRS = [
 # After user logs in, they are redirected to the home page
 LOGIN_REDIRECT_URL = '/accounts/'
 
+LOGIN_URL = '/accounts/login/'
+
+LOGIN_EXEMPT_URLS = (
+    r'^accounts/logout/$',
+    r'^accounts/register%',
+)
+
 # Email Server Listening Port
 EMAIL_HOST = 'localhost'
 EMAIL_PORT = 1025
