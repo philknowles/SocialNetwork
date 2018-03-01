@@ -13,7 +13,7 @@ def home(request):
 
     args = {'myName': name, 'myNumbers': numbers}
 
-    return render(request, reverse('home'), args)
+    return render(request, 'accounts/home.html', args)
 
 
 def register(request):
