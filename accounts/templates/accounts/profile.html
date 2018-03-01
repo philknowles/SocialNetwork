@@ -8,17 +8,22 @@
 {% block content %}
 
     <p>
-        {{ user }}
+        <b>Username:</b> {{ user.userprofile.user }}
     </p>
     <p>
-        {{ user.first_name }}
-
+        <b>Name:</b> {{ user.first_name }} {{ user.last_name }}
     </p>
     <p>
-        {{ user.last_name }}
+        <b>City:</b> {{ user.userprofile.city }}
     </p>
     <p>
-        {{ user.email}}
+       <b>Description:</b> {{ user.userprofile.description }}
+    </p>
+    <p>
+        <b>Website:</b> {{ user.userprofile.website}}
+    </p>
+    <p>
+        <b>Email:</b> {{ user.email}}
     </p>
 
 {% endblock %}
