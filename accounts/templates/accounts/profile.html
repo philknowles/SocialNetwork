@@ -6,9 +6,14 @@
 {% endblock %}
 
 {% block content %}
+    {% if user.userprofile.image %}
     <p>
         <img src="{{ user.userprofile.image.url }}" class="user-image" width="300" />
     </p>
+    {% else %}
+        <!-- If a user decides to leave out their image, a default image will display -->
+        <img src="/media/profile_image/default-profile.svg" class="user-image" />
+    {% endif %}
     <p>
         <b>Username:</b> {{ user.userprofile.user }}
     </p>

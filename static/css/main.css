@@ -11,7 +11,11 @@ h1 {
     font-size:14px;
 }
 
-
+.user-image {
+    border-radius: 100% 100%;
+    max-width:300px;
+    max-height:300px;
+}
 
 
 
