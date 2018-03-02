@@ -121,6 +121,10 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'vacations/media')
+
+
 # When the static directory is not tied to a specific app, but instead in the root directory
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),

@@ -6,7 +6,9 @@
 {% endblock %}
 
 {% block content %}
-
+    <p>
+        <img src="{{ user.userprofile.image.url }}" class="user-image" width="300" />
+    </p>
     <p>
         <b>Username:</b> {{ user.userprofile.user }}
     </p>
