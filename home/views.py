@@ -4,6 +4,7 @@ from home.forms import HomeForm
 from home.models import Post
 from django.contrib.auth.models import User
 
+
 # Create your views here.
 class HomeView(TemplateView):
     template_name = 'home/home.html'
@@ -11,7 +12,7 @@ class HomeView(TemplateView):
     def get(self, request):
         form = HomeForm()
         posts = Post.objects.all().order_by('-created')
-        users = User.objects.all()
+        users = User.objects.exclude(id=request.user.id)
 
         args = {'form': form, 'posts': posts, 'users': users}
 
