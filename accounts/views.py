@@ -6,12 +6,7 @@ from django.contrib.auth import update_session_auth_hash
 
 # Create your views here.
 def home(request):
-    numbers = [1, 2, 3, 4, 5]
-    name = 'Phil Knowles'
-
-    args = {'myName': name, 'myNumbers': numbers}
-
-    return render(request, 'accounts/home.html', args)
+    return render(request, 'accounts/home.html')
 
 
 def register(request):
