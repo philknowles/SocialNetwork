@@ -3,13 +3,14 @@ from django.shortcuts import render
 from home.forms import HomeForm
 from home.models import Post
 
+
 # Create your views here.
 class HomeView(TemplateView):
     template_name = 'home/home.html'
 
     def get(self, request):
         form = HomeForm()
-        posts = Post.objects.all()
+        posts = Post.objects.all().order_by('-created')
 
         args = {'form': form, 'posts': posts}
         return render(request, self.template_name, args)
