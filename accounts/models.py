@@ -4,6 +4,11 @@ from django.db.models.signals import post_save
 
 
 # Create your models here.
+class UserProfileManager(models.Manager):
+    def get_queryset(self):
+        return super(UserProfileManager, self).get_queryset().filter(city='Minneapolis')
+
+
 class UserProfile(models.Model):
     user = models.OneToOneField(User, on_delete='CASCADE')
     description = models.CharField(max_length=100, default='')
@@ -11,6 +16,8 @@ class UserProfile(models.Model):
     website = models.URLField(default='')
     phone = models.IntegerField(default=0)
     image = models.ImageField(upload_to='profile_image', blank=True,)
+
+    minneapolis = UserProfileManager()
 
     def __str__(self):
         return str(self.user)
