@@ -3,7 +3,8 @@
 
 {% block content %}
 
-    <div class="row">
+<div class="row">
+    <div class="col-md-8">
         <h1>Home</h1>
         <form method="post">
             {% csrf_token %}
@@ -11,7 +12,6 @@
             <br/>
             <button type="submit">Submit</button>
         </form>
-
         <h2>{{ text }}</h2>
 
         {% for post in posts %}
@@ -19,4 +19,14 @@
             <p>Posted by: {{ post.user.get_full_name }} on {{ post.created }}</p>
         {% endfor %}
     </div>
+    <div class="col-md-4">
+        <h2>Other Folks</h2>
+        {% for user in users %}
+            <ul>
+                <li><a href="{% url 'accounts:view_profile_with_pk' pk=user.pk %}">{{ user.username }}</a></li>
+            </ul>
+        {% endfor %}
+    </div>
+
+</div>
 {% endblock %}
