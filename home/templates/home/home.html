@@ -22,12 +22,24 @@
         {% endfor %}
     </div>
     <div class="col-md-4">
-        <h2>Other Folks</h2>
+        <h2>People</h2>
         {% for user in users %}
+            {% if not user in friends %}
+                <ul>
+                    <li><a href="{% url 'accounts:view_profile_with_pk' pk=user.pk %}">{{ user.username }}</a>
+                    <a href="{% url 'home:change_friends' operation='add' pk=user.pk %}" class="btn btn-success">Add Friend</a></li>
+                </ul>
+            {% endif %}
+        {% endfor %}
+
+        <h2>Friends</h2>
+        {% for friend in friends %}
             <ul>
-                <li><a href="{% url 'accounts:view_profile_with_pk' pk=user.pk %}">{{ user.username }}</a></li>
+                <li><a href="{% url 'accounts:view_profile_with_pk' pk=user.pk %}">{{ friend.username }}</a>
+                <a href="{% url 'home:change_friends' operation='remove' pk=friend.pk %}" class="btn btn-default">Remove</a></li>
             </ul>
         {% endfor %}
+
     </div>
 
 </div>
