@@ -1,5 +1,8 @@
 
 language: python
+python:
+- "stable"
+script: gulp travis
 
 deploy:
     - provider: s3
