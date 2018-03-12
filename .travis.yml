@@ -11,5 +11,5 @@ env:
 install:
   - pip install -q Django==$DJANGO_VERSION
 
-script: gulp
+script: python manage.py
 
