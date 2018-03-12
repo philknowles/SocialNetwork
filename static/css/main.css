@@ -6,6 +6,8 @@
 html, body {
     padding-top:0;
     padding-bottom:0;
+    background-color:#222629;
+    color:#fff;
 }
 h1 {
     font-size:14px;
@@ -16,6 +18,20 @@ h1 {
     border-radius: 100% 100%;
     max-width:300px;
     max-height:300px;
+}
+
+.navbar, .navbar-collapse {
+    background-color:#111417;
+    color:#fff;
+    border:0;
+}
+
+.navbar-inverse {
+    background-image:none;
+}
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    border-color:#61892f;
 }
 
 
