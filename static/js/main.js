@@ -1,4 +1,5 @@
 
-var test = 'webpack is working';
+let test = 'webpack is working';
 
 console.log(test);
+
