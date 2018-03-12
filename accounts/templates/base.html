@@ -19,6 +19,7 @@
     </head>
     <body>
     {% block body %}
+    {% if user.is_authenticated %}
     <nav class="navbar navbar-inverse" role="navigation">
       <div class="container">
         <div class="navbar-header">
@@ -31,7 +32,6 @@
           <a class="navbar-brand" href="/">Family Connect</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
-            {% if user.is_authenticated %}
                 <ul class="nav navbar-nav">
                     <li><a href="{% url 'home:home' %}">Home</a></li>
                 </ul>
@@ -41,25 +41,15 @@
                     <li><a href="{% url 'accounts:edit profile' %}">Edit Profile</a></li>
                     <li><a href="{% url 'accounts:change password' %}">Change Password</a></li>
                 </ul>
-            {% else %}
-                <ul class="nav navbar-nav">
-                    <li><a href="{% url 'accounts:reset_password' %}">Reset Password</a></li>
-                </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="{% url 'accounts:register' %}">Register</a></li>
-                <li><a href="{% url 'accounts:login' %}">Login</a></li>
-            </ul>
-            {% endif %}
         </div><!--/.navbar-collapse -->
       </div>
     </nav>
+    {% endif %}
 
     <div class="container">
         {% block content %}
         {% endblock %}
     </div>
-
-      <hr>
 
       <footer>
         <p>&copy; Company 2015</p>
@@ -71,6 +61,7 @@
         <script src="{% static '/js/vendor/bootstrap.min.js' %}"></script>
 
         <script src="{% static '/js/main.js' %}"></script>
+        <script src="{% static '/dist/bundle.js' %}"></script>
     {% endblock %}
 
     </body>

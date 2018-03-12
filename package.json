@@ -1,0 +1,25 @@
+{
+  "name": "socialnetwork",
+  "version": "1.0.0",
+  "description": "Social Network Website",
+  "main": "gulp.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack -p",
+    "watch": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/philknowles/vacations.git"
+  },
+  "author": "Phil Knowles",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/philknowles/vacations/issues"
+  },
+  "homepage": "https://gitlab.com/philknowles/vacations#README",
+  "devDependencies": {
+    "webpack": "^4.1.1",
+    "webpack-cli": "^2.0.11"
+  }
+}
