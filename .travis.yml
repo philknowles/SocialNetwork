@@ -1,6 +1,16 @@
 
 language: python
 python:
-- "stable"
-script: gulp travis
+  - "2.7"
+  - "3.6"
+
+env:
+  - DJANGO_VERSION=1.10.8
+  - DJANGO_VERSION=1.11.5
+
+install:
+  - pip install -q Django==$DJANGO_VERSION
+  - python setup.py -q install
+
+script: pytest
 
