@@ -2,15 +2,9 @@
 language: python
 python:
 - "stable"
-script: gulp travis
 
-deploy:
-    - provider: s3
-      ⋮ # rest of S3 deployment for MyApp.zip
-    - provider: codedeploy
-      access_key_id: "AKIAIIRXBQJFMV64J7TA"
-      secret_access_key: "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"
-      bucket: "phildevbucket"
-      key: latest/MyApp.zip
-      application: MyApp
-      deployment_group: MyDeploymentGroup
+env:
+  - env="development"
+
+services:
+- mysql
