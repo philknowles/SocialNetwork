@@ -3,8 +3,13 @@ language: python # language
 python: # versions
   - 3.6
 
+services: postgresql
+
 install: # install requirements with installed packages
   - pip install -r requirements.txt
+
+before_script:
+  - psql -e 'CREATE DATABASE IF NOT EXISTS test;' -U postgres
 
 script: # manage.py script to run the tests
   - python manage.py test
