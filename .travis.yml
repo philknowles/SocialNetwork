@@ -14,3 +14,7 @@ before_script:
 script: # manage.py script to run the tests
   - python manage.py test
 
+notifications:
+  email:
+    - philknowles@taskmasterpro.com
+
