@@ -10,6 +10,7 @@ env:
 
 install:
   - pip install -q Django==$DJANGO_VERSION
+  - pip install django-crispy-forms
 
-script: python manage.py startapp
+script: python manage.py runserver
 
