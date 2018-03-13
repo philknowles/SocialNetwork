@@ -16,5 +16,8 @@ script: # manage.py script to run the tests
 
 notifications:
   email:
-    - philknowles@taskmasterpro.com
+    recipients:
+      - philknowles@taskmasterpro.com
+    on_success: always
+    on_failure: always
 
