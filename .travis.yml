@@ -5,9 +5,9 @@ python: # versions
 
 services: postgresql
 
-before_install:
+env:
   - export DJANGO_SETTINGS_MODULE = vacations.settings
-  
+
 install: # install requirements with installed packages
   - pip install -r requirements.txt
 
