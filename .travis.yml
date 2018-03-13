@@ -1,11 +1,11 @@
 
-language: python
-python:
+language: python # language
+python: # versions
   - 3.6
 
-install:
+install: # install requirements with installed packages
   - pip install -r requirements.txt
 
-script:
+script: # manage.py script to run the tests
   - python manage.py test
 
