@@ -11,4 +11,15 @@ env:
 install: # install requirements with installed packages
   - pip install -r requirements.txt
 
+before_script:
+  - psql -c 'CREATE DATABASE test;' -U postgres
+
+script: # manage.py script to run the tests
+  - python manage.py test
+
+notifications:
+  slack: theknowlesfamily:BJuivdSBRW1hWWBW7X6jhspc
+    rooms:
+      on_success: never
+      on_failure: always
 
