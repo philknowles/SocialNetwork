@@ -15,7 +15,7 @@ before_script:
   - psql -c 'CREATE DATABASE test;' -U postgres
 
 script: # manage.py script to run the tests
-  - python manage.y test
+  - python setup.py test
 
 notifications:
   slack: theknowlesfamily:BJuivdSBRW1hWWBW7X6jhspc
