@@ -17,4 +17,10 @@ before_script:
 script: # manage.py script to run the tests
   - python manage.py test
 
+notifications:
+  slack:
+    rooms:
+      - theknowlesfamily:BJuivdSBRW1hWWBW7X6jhspc#notifications
+    on_success: always
+    on_failure: always
 
