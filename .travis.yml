@@ -19,8 +19,6 @@ script: # manage.py script to run the tests
 
 notifications:
   slack: theknowlesfamily:BJuivdSBRW1hWWBW7X6jhspc
-    rooms:
-      - secure: "altv8HN1VcdOpfJM3gLiLwUrfFmayZBjnI2vzPOxRBlFB42C5YkRDnLS0r0Dl7gVt6BVKf/EuS/63wBHioKpi1RbYlI2gFwEykC12U6kPMnACgI/EtM33wyiBIRqYNfRkRXPNS/W+nKwewtCsgp/YgajGIWglPeRtU+uvGjtrkY2wG/j7T/GO3PsTcdTnonBB12f9LOo+5H45L+LQGSA8Y2aSZGoTu5JyWfgWvUnbUbP0m/5zkUk8t3vxRVkPQHQV9ZumU1SVTgU+xWU5PTS/SEE7tXqpg5lwYLdJzws70Rqp1SzpLMtbBAUqJmr5/RVu0xaFusz6YVXKjtzlm860SQigC3BDN5UwBY472W8r97MwJZ98eGHfORcAblRDuKZ4uNtZqDbkj8HC/Y3gikK1RgmKd5Co9ATPL3uK2o4v3CADTdb0qUurovAVXV1X7Ve5i4h+KT7cvcWIUXnd0MMRwI+ypvkMc95jOyO2Ly149nkuSBVKYyf1SPfyd+Dju0BwBVWTALI+6c5EOZFPSu5mCSVDxB8nWa+qSzma1jy0YAcH5r+Sqe4FsJdy1cSBJHgQHMCUhGjizR6o1YTZeV2dBHYiEuUsnrd33RMWthUtTNRVympvOzRU6V6hEnkScmkdZBdjKp/uVNIRAgUmYsYH3VufCXDfGLiBtzi3ooBVSA="
     on_success: never
     on_failure: always
 
