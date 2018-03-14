@@ -3,3 +3,8 @@ language: python # language
 python: # versions
   - 3.6
 
+services: postgresql
+
+env:
+  - export DJANGO_SETTINGS_MODULE = vacations.settings
+
