@@ -5,8 +5,9 @@
   "main": "gulp.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack -p",
-    "watch": "webpack --watch"
+    "build": "./node_modules/.bin/webpack -p",
+    "watch": "./node_modules/.bin/webpack --watch",
+    "dev": ".node_modules/.bin/webpack-dev-server"
   },
   "repository": {
     "type": "git",
@@ -30,6 +31,7 @@
     "style-loader": "^0.20.3",
     "travis": "^0.1.1",
     "webpack": "^4.1.1",
-    "webpack-cli": "^2.0.11"
+    "webpack-cli": "^2.0.11",
+    "webpack-dev-server": "^3.1.1"
   }
 }
