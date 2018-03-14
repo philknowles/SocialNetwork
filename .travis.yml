@@ -19,4 +19,5 @@ script: # manage.py script to run the tests
 
 notifications:
   slack: theknowlesfamily:BJuivdSBRW1hWWBW7X6jhspc
+    on_failure: always
 
