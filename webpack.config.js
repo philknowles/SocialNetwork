@@ -42,6 +42,8 @@ module.exports = {
         port: 12000,
         stats: 'errors-only',
         compress: true
-    }
+    },
+
+    devtool: "inline-source-map"
 };
 

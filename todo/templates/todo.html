@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% load crispy_forms_tags %}
+{% crispy form form.helper %}
+
+{% block content %}
+    <form method="post" class="task-form">
+        {% csrf_token %}
+        {{ form|crispy }}
+        <input type="submit" class="btn btn-primary" value="Add">
+    </form>
+    <hr />
+
+    <div class="row">
+        <div class="col-lg-12">
+        <h2>Task List</h2>
+            {% for task in tasks %}
+                <p>{{ task.task_name }}</p>
+            {% endfor %}
+        </div>
+    </div>
+
+{% endblock %}
