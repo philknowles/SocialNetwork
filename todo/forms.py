@@ -4,8 +4,10 @@ from .models import Task
 
 
 class TaskForm(forms.ModelForm):
-    helper = FormHelper()
-    helper.form_show_labels = False
+    # This definition removes the label for the input field, task_name
+    def __init__(self, *args, **kwargs):
+        super(TaskForm, self).__init__(*args, **kwargs)
+        self.fields['task_name'].label = False
 
     task_name = forms.CharField(widget=forms.TextInput(
         attrs={

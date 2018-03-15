@@ -4,20 +4,28 @@
 {% crispy form form.helper %}
 
 {% block content %}
-    <form method="post" class="task-form">
-        {% csrf_token %}
-        {{ form|crispy }}
-        <input type="submit" class="btn btn-primary" value="Add">
-    </form>
-    <hr />
-
-    <div class="row">
+    <div class="container">
         <div class="col-lg-12">
-        <h2>Task List</h2>
-            {% for task in tasks %}
-                <p>{{ task.task_name }}</p>
-            {% endfor %}
+            <form method="post" class="task-form">
+                {% csrf_token %}
+                <div class="col-lg-9">{{ form|crispy }}</div>
+                <div class="col-lg-3"><input type="submit" class="btn btn-primary" value="Add Task"></div>
+            </form>
         </div>
     </div>
+
+    {% for task in tasks %}
+        <div class="container">
+            <div class="col-lg-12">
+                {% if task.done %}
+                    <span class="fa fa-check-square-o"></span>
+                {% else %}
+                    <span class="fa fa-square-o"></span>
+                {% endif %}
+                <p>{{ task.task_name }}</p>
+                <hr />
+            </div>
+        </div>
+    {% endfor %}
 
 {% endblock %}
