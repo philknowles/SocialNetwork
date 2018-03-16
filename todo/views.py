@@ -13,13 +13,13 @@ def all_tasks(request):
     form = TaskForm(request.POST)
 
     if form.is_valid():
-        tasks = form.save(commit=False)
-        tasks.user = request.user
-        tasks.save()
+        task_name = form.save(commit=False)
+        task_name.user = request.user
+        task_name.save()
 
-        tasks = form.cleaned_data['post']
+        tasks = form.cleaned_data['task_name']
         form = TaskForm()
-        return redirect('todo.html')
+        return redirect('all_tasks')
 
     args = {'form': form, 'tasks': tasks}
     return render(request, 'todo.html', args)
