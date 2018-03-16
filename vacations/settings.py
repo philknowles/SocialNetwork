@@ -152,7 +152,7 @@ LOGIN_URL = '/accounts/login/'
 
 LOGIN_EXEMPT_URLS = (
     r'^accounts/logout/$',
-    r'^accounts/register%',
+    r'^accounts/register/$',
     r'^accounts/reset-password/$',
     r'^accounts/reset-password/done/$',
     r'^accounts/reset-password/confirm/(?P<uidb64>[0-9A-Za-z]+)-(?P<token>.+)/$',
