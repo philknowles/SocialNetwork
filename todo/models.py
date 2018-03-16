@@ -6,6 +6,7 @@ class Task(models.Model):
     id = models.AutoField(primary_key=True)
     task_name = models.CharField(max_length=100)
     done = models.BooleanField(default=False)
+    # due_date = models.DateField(auto_now_add=True)
 
     def __str__(self):
         if self.done:

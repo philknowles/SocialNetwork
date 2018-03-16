@@ -9,6 +9,8 @@ class TaskForm(forms.ModelForm):
         super(TaskForm, self).__init__(*args, **kwargs)
         self.fields['task_name'].label = False
 
+    helper = FormHelper()
+
     task_name = forms.CharField(widget=forms.TextInput(
         attrs={
             'class': 'form-control',

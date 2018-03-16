@@ -1,4 +1,4 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, redirect, get_object_or_404
 from django.views.generic import TemplateView
 from django.http import HttpResponseRedirect
 
@@ -13,9 +13,13 @@ def all_tasks(request):
     form = TaskForm(request.POST)
 
     if form.is_valid():
-        post = form.save(commit=False)
-        post.user = request.user
-        post.save()
+        tasks = form.save(commit=False)
+        tasks.user = request.user
+        tasks.save()
+
+        tasks = form.cleaned_data['post']
+        form = TaskForm()
+        return redirect('todo.html')
 
     args = {'form': form, 'tasks': tasks}
     return render(request, 'todo.html', args)
