@@ -146,7 +146,7 @@ STATICFILES_DIRS = [
 ]
 
 # After user logs in, they are redirected to the home page
-LOGIN_REDIRECT_URL = '/accounts/'
+LOGIN_REDIRECT_URL = '/home/'
 
 LOGIN_URL = '/accounts/login/'
 
