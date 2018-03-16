@@ -4,9 +4,19 @@
 {% crispy form form.helper %}
 
 {% block content %}
-    <form method="post">
-        {% csrf_token %}
-        {{ form|crispy }}
-        <button type="submit">Sign Up</button>
-    </form>
+    <div class="row form-container">
+            <h1>@</h1>
+        <div class="form">
+            <div class="heading">
+                <h3>Login To Your Account</h3>
+            </div>
+            <div class="registration-form">
+                <form method="post">
+                    {% csrf_token %}
+                    {{ form|crispy }}
+                    <button type="submit" class="btn btn-form">Sign Up</button>
+                </form>
+            </div>
+        </div>
+    </div>
 {% endblock %}
