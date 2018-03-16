@@ -4,7 +4,7 @@
   margin:10% auto;
   text-align:center;
   h1 {
-    color:$crete;
+    color:$mine_shaft;
     font-size:24px;
     padding-bottom:10px;
   }
@@ -15,8 +15,9 @@
   padding:0;
   text-align:center;
   color:#fff;
-  background-color:$crete;
+  background-color:$mine_shaft;
   border:1px solid #000;
+  border-top:2px solid $tango;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -30,7 +31,7 @@
     h3 {
       margin-top:0;
       padding:15px 0;
-      color:$atlantis;
+      color:#000;
     }
   }
 }
@@ -57,10 +58,15 @@
   }
 }
 
+//Nav hover override
+.nav>li>a:hover, .nav>li>a:focus {
+  background:$shark;
+}
+
 .btn-login {
   width:100%;
   text-transform:uppercase;
-  background-color:#86C232;
+  background-color:$tango;
   color:#000;
 }
 
