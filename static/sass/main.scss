@@ -1,5 +1,9 @@
+// Mixins
+@import "base/colors.scss";
+
 @import 'base/base.scss';
 @import 'elements/buttons.scss';
+@import 'components/login.scss';
 
 /* ==========================================================================
    Author's custom styles
