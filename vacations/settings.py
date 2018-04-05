@@ -35,6 +35,7 @@ INSTALLED_APPS = [
     'home',
     'crispy_forms',
     'todo',
+    'blog',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
