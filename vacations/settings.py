@@ -36,6 +36,7 @@ INSTALLED_APPS = [
     'crispy_forms',
     'todo',
     'blog',
+    'taggit',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -161,5 +162,8 @@ LOGIN_EXEMPT_URLS = (
 )
 
 # Email Server Listening Port
-EMAIL_HOST = 'localhost'
-EMAIL_PORT = 1025
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'philknowles@taskmasterpro.com'
+EMAIL_HOST_PASSWORD = 'M@lu6000'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
