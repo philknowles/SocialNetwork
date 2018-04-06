@@ -18,6 +18,12 @@ from django.contrib import admin
 from vacations import views
 from django.conf import settings
 from django.conf.urls.static import static
+# from django.contrib.sitemaps.views import sitemap
+# from blog.sitemaps import PostSiteMap
+
+# sitemaps = {
+#    'posts': PostSiteMap,
+# }
 
 
 urlpatterns = [
@@ -27,4 +33,5 @@ urlpatterns = [
     url(r'^home/', include('home.urls', namespace='home')),
     url(r'^todo/', include('todo.urls')),
     url(r'^blog/', include('blog.urls', namespace='blog')),
+#    url(r'^sitemap\.xml$', sitemap, {'sitemaps': sitemaps}, name='django.contrib.sitemaps.views.sitemap'),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
