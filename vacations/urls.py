@@ -33,5 +33,9 @@ urlpatterns = [
     url(r'^home/', include('home.urls', namespace='home')),
     url(r'^todo/', include('todo.urls')),
     url(r'^blog/', include('blog.urls', namespace='blog')),
-#    url(r'^sitemap\.xml$', sitemap, {'sitemaps': sitemaps}, name='django.contrib.sitemaps.views.sitemap'),
+    url(r'^shop/', include('shop.urls', namespace='shop')),
+    # url(r'^sitemap\.xml$', sitemap, {'sitemaps': sitemaps}, name='django.contrib.sitemaps.views.sitemap'),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

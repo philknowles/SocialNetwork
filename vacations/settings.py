@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'todo',
     'blog',
     'taggit',
+    'shop',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
