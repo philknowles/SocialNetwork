@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'blog',
     'taggit',
     'shop',
+    'cart',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -171,3 +172,5 @@ EMAIL_HOST_USER = 'philknowles@taskmasterpro.com'
 EMAIL_HOST_PASSWORD = 'M@lu6000'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
+
+CART_SESSION_ID = 'cart'
