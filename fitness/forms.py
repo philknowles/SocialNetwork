@@ -4,12 +4,31 @@ from .models import Exercise
 
 
 class ExerciseForm(forms.ModelForm):
-    exercise = forms.CharField(label="Exercise", required=True)
-    weight = forms.CharField(label="Weight", required=False)
-    reps = forms.CharField(label="Reps", required=False)
-
     helper = FormHelper()
     helper.form_method = 'POST'
+
+    exercise = forms.CharField(widget=forms.TextInput(
+        attrs={
+            'label': 'Exercise',
+            'class': 'form-control',
+            'placeholder': 'Add an Exercise...',
+            'required': False
+        }
+    ))
+    weight = forms.CharField(widget=forms.TextInput(
+        attrs={
+            'class': 'form-control',
+            'placeholder': 'Add the weight used...',
+            'required': False
+    }
+    ))
+    reps = forms.CharField(widget=forms.TextInput(
+        attrs={
+            'class': 'form-control',
+            'placeholder': 'Add number of reps...',
+            'required': False
+        }
+    ))
 
     class Meta:
         model = Exercise
