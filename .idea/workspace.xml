@@ -2,41 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1888ab23-5368-4c6b-939f-6d7d64e592c3" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/cart/context_processors.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/orders/__init__.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/orders/admin.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/orders/apps.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/orders/forms.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/orders/migrations/0001_initial.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/orders/migrations/__init__.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/orders/models.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/orders/tasks.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/orders/templates/orders/order/create.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/orders/templates/orders/order/created.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/orders/tests.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/orders/urls.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/orders/views.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/shop/migrations/0004_auto_20180409_1256.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/sass/elements/tasks.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/sass/fitness.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vacations/celery.py" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d521326c-315c-4821-965c-472763df471b.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/d521326c-315c-4821-965c-472763df471b.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d521326c-315c-4821-965c-472763df471b/storage_v2/_src_/database/family.ZFuYsw/schema/public.abK9xQ.meta" afterPath="$PROJECT_DIR$/.idea/dataSources/d521326c-315c-4821-965c-472763df471b/storage_v2/_src_/database/family.ZFuYsw/schema/public.abK9xQ.meta" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/accounts/templates/accounts/login.html" afterPath="$PROJECT_DIR$/accounts/templates/accounts/login.html" />
       <change beforePath="$PROJECT_DIR$/accounts/templates/base.html" afterPath="$PROJECT_DIR$/accounts/templates/base.html" />
-      <change beforePath="$PROJECT_DIR$/blog/templates/blog/base.html" afterPath="$PROJECT_DIR$/blog/templates/blog/base.html" />
-      <change beforePath="$PROJECT_DIR$/cart/templates/cart/detail.html" afterPath="$PROJECT_DIR$/cart/templates/cart/detail.html" />
-      <change beforePath="$PROJECT_DIR$/fitness/forms.py" afterPath="$PROJECT_DIR$/fitness/forms.py" />
-      <change beforePath="$PROJECT_DIR$/shop/templates/shop/base.html" afterPath="$PROJECT_DIR$/shop/templates/shop/base.html" />
-      <change beforePath="$PROJECT_DIR$/shop/templates/shop/product/list.html" afterPath="$PROJECT_DIR$/shop/templates/shop/product/list.html" />
-      <change beforePath="$PROJECT_DIR$/static/dist/bundle.js" afterPath="$PROJECT_DIR$/static/dist/bundle.js" />
-      <change beforePath="$PROJECT_DIR$/static/sass/base/colors.scss" afterPath="$PROJECT_DIR$/static/sass/base/colors.scss" />
-      <change beforePath="$PROJECT_DIR$/static/sass/main.scss" afterPath="$PROJECT_DIR$/static/sass/main.scss" />
-      <change beforePath="$PROJECT_DIR$/todo/templates/todo.html" afterPath="$PROJECT_DIR$/todo/templates/todo.html" />
-      <change beforePath="$PROJECT_DIR$/vacations/__init__.py" afterPath="$PROJECT_DIR$/vacations/__init__.py" />
-      <change beforePath="$PROJECT_DIR$/vacations/settings.py" afterPath="$PROJECT_DIR$/vacations/settings.py" />
-      <change beforePath="$PROJECT_DIR$/vacations/urls.py" afterPath="$PROJECT_DIR$/vacations/urls.py" />
+      <change beforePath="$PROJECT_DIR$/fitness/templates/fitness/exercises.html" afterPath="$PROJECT_DIR$/fitness/templates/fitness/exercises.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -173,8 +141,8 @@
       <file leaf-file-name="exercises.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fitness/templates/fitness/exercises.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="14" lean-forward="true" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+            <state relative-caret-position="262">
+              <caret line="16" column="75" lean-forward="false" selection-start-line="16" selection-start-column="75" selection-end-line="16" selection-end-column="75" />
               <folding />
             </state>
           </provider>
@@ -193,18 +161,18 @@
       <file leaf-file-name="todo.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/todo/templates/todo.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="21" column="47" lean-forward="false" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
+            <state relative-caret-position="398">
+              <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tasks.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="tasks.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/sass/elements/tasks.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="23" lean-forward="false" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+            <state relative-caret-position="85">
+              <caret line="5" column="1" lean-forward="false" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -214,7 +182,7 @@
         <entry file="file://$PROJECT_DIR$/static/sass/main.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
-              <caret line="5" column="30" lean-forward="true" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+              <caret line="5" column="30" lean-forward="false" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -252,11 +220,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/accounts/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="29" column="42" lean-forward="true" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
+            <state relative-caret-position="205">
+              <caret line="61" column="16" lean-forward="false" selection-start-line="61" selection-start-column="16" selection-end-line="61" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -354,16 +322,16 @@
         <option value="$PROJECT_DIR$/vacations/urls.py" />
         <option value="$PROJECT_DIR$/fitness/admin.py" />
         <option value="$PROJECT_DIR$/todo/forms.py" />
-        <option value="$PROJECT_DIR$/fitness/templates/fitness/exercises.html" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/d521326c-315c-4821-965c-472763df471b/console.sql" />
         <option value="$PROJECT_DIR$/fitness/urls.py" />
         <option value="$PROJECT_DIR$/fitness/views.py" />
         <option value="$PROJECT_DIR$/fitness/models.py" />
-        <option value="$PROJECT_DIR$/accounts/templates/base.html" />
         <option value="$PROJECT_DIR$/fitness/forms.py" />
         <option value="$PROJECT_DIR$/todo/templates/todo.html" />
         <option value="$PROJECT_DIR$/static/sass/main.scss" />
         <option value="$PROJECT_DIR$/static/sass/elements/tasks.scss" />
+        <option value="$PROJECT_DIR$/fitness/templates/fitness/exercises.html" />
+        <option value="$PROJECT_DIR$/accounts/templates/base.html" />
       </list>
     </option>
   </component>
@@ -438,13 +406,6 @@
               <item name="vacations" type="462c0819:PsiDirectoryNode" />
               <item name="accounts" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="vacations" type="b2602c69:ProjectViewProjectNode" />
-              <item name="vacations" type="462c0819:PsiDirectoryNode" />
-              <item name="accounts" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="accounts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="vacations" type="b2602c69:ProjectViewProjectNode" />
@@ -606,7 +567,14 @@
       <option name="project" value="LOCAL" />
       <updated>1523482804054</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Made layout design changes">
+      <created>1523485155160</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1523485155160</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TodoView">
@@ -655,7 +623,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Implementing Initial Stages of Fitness Tracker" />
     <MESSAGE value="Setting Up Crispy Forms, Getting form to work." />
-    <option name="LAST_COMMIT_MESSAGE" value="Setting Up Crispy Forms, Getting form to work." />
+    <MESSAGE value="Made layout design changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Made layout design changes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -993,7 +962,7 @@
         <state relative-caret-position="408">
           <caret line="24" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding>
-            <element signature="e#0#64#0" expanded="true" />
+            <element signature="e#0#64#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1011,16 +980,8 @@
         <state relative-caret-position="119">
           <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding>
-            <element signature="e#0#32#0" expanded="true" />
+            <element signature="e#0#32#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fitness/templates/fitness/exercises.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="14" lean-forward="true" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1028,14 +989,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/accounts/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="29" column="42" lean-forward="true" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
           <folding />
         </state>
       </provider>
@@ -1092,26 +1045,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/todo/templates/todo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="21" column="47" lean-forward="false" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/sass/main.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="5" column="30" lean-forward="true" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+          <caret line="5" column="30" lean-forward="false" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/sass/elements/tasks.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="23" lean-forward="false" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+        <state relative-caret-position="85">
+          <caret line="5" column="1" lean-forward="false" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/todo/templates/todo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fitness/templates/fitness/exercises.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="16" column="75" lean-forward="false" selection-start-line="16" selection-start-column="75" selection-end-line="16" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="61" column="16" lean-forward="false" selection-start-line="61" selection-start-column="16" selection-end-line="61" selection-end-column="16" />
           <folding />
         </state>
       </provider>
