@@ -1,4 +1,5 @@
 from django.shortcuts import render, redirect, get_object_or_404
+from django.views.decorators.http import require_POST
 from .models import Exercise
 from .forms import ExerciseForm
 
@@ -22,3 +23,4 @@ def all_exercises(request):
 
     args = {'form': form, 'exercises': exercises}
     return render(request, 'fitness/exercises.html', args)
+

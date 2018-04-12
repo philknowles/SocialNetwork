@@ -6,53 +6,30 @@ from .models import Exercise
 
 
 class ExerciseForm(forms.ModelForm):
-    helper = FormHelper()
-    helper.form_method = 'POST'
+
+    exercise_date = forms.DateField(label='', required=True,
+                                    widget=forms.TextInput(attrs={'type': 'date'}))
+    exercise = forms.CharField(label='', max_length=255, required=True,
+                               widget=forms.TextInput(attrs={'placeholder': 'Enter Exercise'}))
+
+    weight = forms.CharField(label='', max_length=10, required=False,
+                             widget=forms.TextInput(attrs={'type': 'number', 'placeholder': 'Enter Weight in Metrics'}))
+
+    reps = forms.CharField(label='', max_length=10, required=False,
+                           widget=forms.TextInput(attrs={'type': 'number', 'placeholder': 'Enter Total Repetitions'}))
+
+    sets = forms.CharField(label='', max_length=100, required=False,
+                           widget=forms.TextInput(attrs={'type': 'number', 'placeholder': 'Enter Number of Sets'}))
 
     def __int__(self, *args, **kwargs):
         super(ExerciseForm, self).__init__(*args, **kwargs)
         self.helper = FormHelper(self)
-        self.helper.layout = Layout(
-            Fieldset('Exercise',
-                 Field(
-                     'exercise'
-                 ),
-                 Field(
-                     'weight'
-                 ),
-                 Field(
-                     'reps'
-                 ),
-            )
-        )
-
-#    exercise = forms.CharField(widget=forms.TextInput(
-#        attrs={
-#            'label': 'Exercise',
-#            'class': 'form-control',
-#            'placeholder': 'Add an Exercise...',
-#            'required': False,
-#            'autocomplete': 'off',
-#            'form_show_errors': False
-#        }
-#    ))
-#    weight = forms.CharField(widget=forms.TextInput(
-#        attrs={
-#            'class': 'form-control',
-#            'placeholder': 'Add the weight used...',
-#            'required': False,
-#            'autocomplete': 'off',
-#        }
-#    ))
-#    reps = forms.CharField(widget=forms.TextInput(
-#        attrs={
-#            'class': 'form-control',
-#            'placeholder': 'Add number of reps...',
-#            'required': False,
-#            'autocomplete': 'off'
-#        }
-#    ))
+        self.helper.form_show_labels = False
+        self.helper.form_show_errors = False
+        layout = self.helper.layout = Layout()
+        for field_name, field in self.fields.items():
+            layout.append(Field(field_name, placeholder=field.label))
 
     class Meta:
         model = Exercise
-        fields = ['exercise', 'weight', 'reps']
+        fields = ['exercise_date', 'exercise', 'weight', 'reps', 'sets', ]

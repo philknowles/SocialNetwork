@@ -1,21 +1,62 @@
-{% extends 'base.html' %}
+{% extends 'fitness/base.html' %}
 {% load staticfiles %}
 
 {% load crispy_forms_tags %}
+{% crispy form form.helper %}
 
+{% block tracker %}
+    <div class="col-lg-12">
+        <h3>Exercise Log</h3>
+        <form method="post">
+            {% csrf_token %}
+            {{ form|crispy }}
+            <button type="submit" class="btn btn-form">Add Exercise</button>
+        </form>
+    </div>
+{% endblock %}
 {% block content %}
-    <div class="row form-container">
-            <h1>@</h1>
-        <div class="form">
-            <div class="heading">
-                <h3>Fitness Tracker</h3>
-            </div>
-            <div class="login-form">
-                <form method="post">
-                    {% csrf_token %}
-                    {{ form|crispy }}
-                    <button type="submit" class="btn btn-form">Add Exercise</button>
-                </form>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <i class="fa fa-bar-chart-o fa-fw"></i>Stats
+        </div>
+        <div class="panel-body">
+            <div class="list-group">
+                <div class="list-group-item row">
+                    <div class="col-lg-2">
+                        <strong>Date</strong>
+                    </div>
+                    <div class="col-lg-4">
+                        <strong>Exercise</strong>
+                    </div>
+                    <div class="col-lg-2">
+                        <strong>Weight(lbs)</strong>
+                    </div>
+                    <div class="col-lg-2">
+                        <strong>Repetitions</strong>
+                    </div>
+                    <div class="col-lg-2">
+                        <strong>Sets</strong>
+                    </div>
+                </div>
+                {% for exercise in exercises %}
+                    <div class="list-group-item row">
+                        <div class="col-lg-2">
+                            {{ exercise.exercise_date }}
+                        </div>
+                        <div class="col-lg-4">
+                            {{ exercise.exercise }}
+                        </div>
+                        <div class="col-lg-2">
+                            {{ exercise.weight }}
+                        </div>
+                        <div class="col-lg-2">
+                            {{ exercise.reps }}
+                        </div>
+                        <div class="col-lg-2">
+                            {{ exercise.sets }}
+                        </div>
+                    </div>
+                {% endfor %}
             </div>
         </div>
     </div>
