@@ -16,7 +16,7 @@ def all_exercises(request):
         exercise_name.user = request.user
         exercise_name.save()
 
-        exercises = form.cleaned_data['exercise_name']
+        exercises = form.cleaned_data['exercise']
         form = ExerciseForm()
         return redirect('all_exercises')
 
