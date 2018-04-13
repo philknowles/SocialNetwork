@@ -66,3 +66,11 @@
         </div>
     </div>
 {% endblock %}
+{% block pushup %}
+    {% for exercise in exercises %}
+        {% if exercise.exercise == 'Pushup' %}
+            {{ exercise.reps }}
+        {% endif %}
+    {% endfor %}
+    Pushups
+{% endblock %}
