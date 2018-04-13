@@ -7,6 +7,8 @@
 @import 'components/forms.scss';
 @import 'components/admin-panel.scss';
 
+//App Specific
+@import 'apps/fitness/fitness.scss';
 
 /* ==========================================================================
    Author's custom styles
@@ -15,19 +17,5 @@
   border-radius: 100% 100%;
   max-width:300px;
   max-height:300px;
-}
-
-.navbar, .navbar-collapse {
-  background-color:#111417;
-  color:#fff;
-  border:0;
-}
-
-.navbar-inverse {
-  background-image:none;
-}
-
-.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
-  border-color:#61892f;
 }
 

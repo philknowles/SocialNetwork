@@ -1,0 +1,31 @@
+body {
+
+}
+#page-wrapper {
+  background-color:#FAF8F9;
+}
+
+.navbar, .navbar-collapse {
+  background-color:$cape-palliser;
+  border-bottom:1px solid $whiskey;
+  color:#fff;
+}
+
+.sidebar .sidebar-nav.navbar-collapse {
+  background-color:$cape-cod;
+  border:0;
+}
+
+.panel-default>.panel-heading {
+  background-color:$sandrift;
+  color:#fff;
+}
+
+.navbar-default .navbar-brand, a.dropdown-toggle {
+  color:#fff;
+}
+
+.nav>li>a:focus, .nav>li>a:hover {
+  background:$ripe-lemon;
+  color:$cape-cod;
+}

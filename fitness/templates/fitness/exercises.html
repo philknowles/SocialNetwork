@@ -56,7 +56,9 @@
                             {{ exercise.sets }}
                         </div>
                         <div class="col-lg-2">
-                            <a href="{% url "delete_exercise" exercise.id %}" class="btn btn-danger">Delete</a>
+                            {% if exercise.id %}
+                                <a href="{% url "delete_exercise" exercise.id %}" class="btn btn-danger">Delete</a>
+                            {% endif %}
                         </div>
                     </div>
                 {% endfor %}
