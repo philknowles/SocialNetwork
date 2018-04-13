@@ -26,6 +26,7 @@ def all_exercises(request):
     return render(request, 'fitness/exercises.html', args)
 
 
+# Function associated to the delete button
 def delete_exercise(request, id):
     exercise = Exercise.objects.get(id=id)
     if request.method == 'POST':
