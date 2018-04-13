@@ -25,7 +25,7 @@
                     <div class="col-lg-2">
                         <strong>Date</strong>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-2">
                         <strong>Exercise</strong>
                     </div>
                     <div class="col-lg-2">
@@ -43,7 +43,7 @@
                         <div class="col-lg-2">
                             {{ exercise.exercise_date }}
                         </div>
-                        <div class="col-lg-4">
+                        <div class="col-lg-2">
                             {{ exercise.exercise }}
                         </div>
                         <div class="col-lg-2">
@@ -54,6 +54,9 @@
                         </div>
                         <div class="col-lg-2">
                             {{ exercise.sets }}
+                        </div>
+                        <div class="col-lg-2">
+                            <a href="{% url "delete_exercise" exercise.id %}" class="btn btn-danger">Delete</a>
                         </div>
                     </div>
                 {% endfor %}

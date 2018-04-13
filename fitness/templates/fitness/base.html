@@ -10,7 +10,9 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Bootstrap Admin Theme</title>
+    {% block head %}
+        <title>{% block title %}{% endblock %}</title>
+    {% endblock %}
    {% load static %}
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="{% static '/css/vendor/bootstrap.min.css' %}">
