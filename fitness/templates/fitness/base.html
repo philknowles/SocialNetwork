@@ -61,12 +61,14 @@
                         <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
                     </a>
                     <ul class="dropdown-menu dropdown-user">
-                        <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                        <li><a href="{% url 'accounts:profile' %}"><i class="fa fa-user fa-fw"></i> User Profile</a>
                         </li>
-                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                        <li><a href="{% url 'accounts:edit profile' %}"><i class="fa fa-gear fa-fw"></i> Edit Profile</a>
+                        </li>
+                        <li><a href="{% url 'accounts:change password' %}"><i class="fa fa-gear fa-fw"></i> Change Password</a>
                         </li>
                         <li class="divider"></li>
-                        <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        <li><a href="{% url 'accounts:logout' %}"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
                         </li>
                     </ul>
                     <!-- /.dropdown-user -->
@@ -74,10 +76,46 @@
                 <!-- /.dropdown -->
             </ul>
             <!-- /.navbar-top-links -->
+            <ul class="nav navbar-top-links navbar-right">
+                <!-- /.dropdown -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-bell fa-fw"></i>
+                    </a>
+                </li>
+                <!-- /.dropdown -->
+            </ul>
+            <!--ul class="nav navbar-top-links navbar-right">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="{% url 'blog:post_list' %}">
+                        <i class="fa fa-newspaper fa-fw"></i>
+                    </a>
+                </li>
+            </ul-->
+            <!-- /.navbar-top-links -->
+            <ul class="nav navbar-top-links navbar-right">
+                <!-- /.dropdown -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-users fa-fw"></i> <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li><a href="#"><i class="fa fa-user fa-fw"></i> Add Friend</a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> Friends</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="{% url 'accounts:logout' %}"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-user -->
+                </li>
+                <!-- /.dropdown -->
+            </ul>
 
             <div class="navbar-default sidebar" role="navigation">
                 <div class="sidebar-nav navbar-collapse">
-                    {% block tracker %}
+                    {% block side_column %}
                     {% endblock %}
                 </div>
                 <!-- /.sidebar-collapse -->
@@ -98,49 +136,29 @@
                 {% endblock %}
             </div>
             <!-- /.row -->
-            <div class="row">
+            <!--div class="row">
                 <div class="col-lg-4">
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <i class="fa fa-bar-chart-o fa-fw"></i> Push ups
                         </div>
-                        <!-- /.panel-heading -->
                         <div class="panel-body">
                             <p>Add a push up view in this column.  Consider making a graph around it.</p>
                             {% block pushup %}
                             {% endblock %}
                         </div>
-                        <!-- /.panel-body -->
                     </div>
-                    <!-- /.panel .chat-panel -->
                 </div>
-                <!-- /.col-lg-4 -->
                 <div class="col-lg-4">
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <i class="fa fa-bar-chart-o fa-fw"></i> Core
                         </div>
-                        <!-- /.panel-heading -->
                         <div class="panel-body">
                             <p>Include all Crunches, Situps, Planks, and other core exercises here.</p>
                         </div>
-                        <!-- /.panel-body -->
                     </div>
-                    <!-- /.panel .chat-panel -->
-                </div>
-                <div class="col-lg-4">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <i class="fa fa-bar-chart-o fa-fw"></i> Cardio
-                        </div>
-                        <!-- /.panel-heading -->
-                        <div class="panel-body">
-                            <p>Placeholder for now.  Running isn't part of the current version.</p>
-                        </div>
-                        <!-- /.panel-body -->
-                    </div>
-                    <!-- /.panel .chat-panel -->
-                </div>
+                </div-->
             </div>
             <!-- /.row -->
         </div>
