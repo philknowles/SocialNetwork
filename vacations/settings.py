@@ -24,7 +24,7 @@ SECRET_KEY = "^*n#w-elrt+57-e1x1@9@7&t)u82@$c83ho37k(kkjog1ovf=p"
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [u"fitnesstracker.pythonanywhere.com"]
 
 CRISPY_TEMPLATE_PACK = "bootstrap4"
 
